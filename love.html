@@ -10,25 +10,20 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link
-  href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
-  rel="stylesheet"
+href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+rel="stylesheet"
 >
 
 <style>
 
 :root{
-
     --pink:#e78ba7;
     --deep:#a94d6c;
     --rose:#c96785;
-
     --cream:#fff8f2;
     --soft:#ffe8ef;
-
     --text:#603d49;
-
     --white:#ffffff;
-
 }
 
 *{
@@ -42,28 +37,16 @@ html{
 }
 
 body{
-
     min-height:100vh;
-
     font-family:"DM Sans",sans-serif;
-
     color:var(--text);
 
     background:
-        radial-gradient(
-            circle at top left,
-            #fff4f7,
-            transparent 35%
-        ),
-        radial-gradient(
-            circle at bottom right,
-            #ffe7ef,
-            transparent 35%
-        ),
+        radial-gradient(circle at top left,#fff4f7,transparent 35%),
+        radial-gradient(circle at bottom right,#ffe7ef,transparent 35%),
         var(--cream);
 
     overflow-x:hidden;
-
 }
 
 
@@ -72,20 +55,14 @@ body{
 ========================================================= */
 
 .bg-flower{
-
     position:fixed;
-
     font-size:28px;
-
     opacity:.18;
-
     pointer-events:none;
-
     z-index:0;
 
     animation:
         floatFlower 8s ease-in-out infinite;
-
 }
 
 .bg-flower.one{
@@ -96,21 +73,18 @@ body{
 .bg-flower.two{
     right:5%;
     top:28%;
-
     animation-delay:2s;
 }
 
 .bg-flower.three{
     left:8%;
     bottom:12%;
-
     animation-delay:4s;
 }
 
 .bg-flower.four{
     right:10%;
     bottom:20%;
-
     animation-delay:1s;
 }
 
@@ -132,32 +106,21 @@ body{
 ========================================================= */
 
 .petals{
-
     position:fixed;
-
     inset:0;
-
     pointer-events:none;
-
     overflow:hidden;
-
     z-index:1;
-
 }
 
 .petal{
-
     position:absolute;
-
     top:-30px;
-
     font-size:18px;
-
     opacity:.5;
 
     animation:
         fall linear infinite;
-
 }
 
 @keyframes fall{
@@ -184,15 +147,11 @@ body{
 .lock-screen{
 
     position:fixed;
-
     inset:0;
-
     z-index:100;
 
     display:flex;
-
     align-items:center;
-
     justify-content:center;
 
     padding:20px;
@@ -204,7 +163,6 @@ body{
             #ffe8ef 45%,
             #f9c9d8
         );
-
 }
 
 .lock-card{
@@ -220,7 +178,8 @@ body{
 
     backdrop-filter:blur(20px);
 
-    border:1px solid
+    border:
+        1px solid
         rgba(255,255,255,.8);
 
     border-radius:30px;
@@ -228,7 +187,6 @@ body{
     box-shadow:
         0 25px 70px
         rgba(169,77,108,.18);
-
 }
 
 .lock-icon{
@@ -239,7 +197,6 @@ body{
     margin:0 auto 20px;
 
     display:flex;
-
     align-items:center;
     justify-content:center;
 
@@ -248,7 +205,6 @@ body{
     background:var(--soft);
 
     font-size:38px;
-
 }
 
 .lock-card h1{
@@ -264,7 +220,6 @@ body{
     color:var(--deep);
 
     margin-bottom:10px;
-
 }
 
 .lock-card p{
@@ -276,7 +231,6 @@ body{
     opacity:.75;
 
     margin-bottom:24px;
-
 }
 
 .code-input{
@@ -285,7 +239,8 @@ body{
 
     padding:15px;
 
-    border:1px solid
+    border:
+        1px solid
         rgba(169,77,108,.18);
 
     border-radius:16px;
@@ -301,7 +256,6 @@ body{
     outline:none;
 
     color:var(--deep);
-
 }
 
 .code-input:focus{
@@ -311,7 +265,6 @@ body{
     box-shadow:
         0 0 0 4px
         rgba(231,139,167,.12);
-
 }
 
 .unlock-btn{
@@ -344,7 +297,6 @@ body{
     box-shadow:
         0 10px 25px
         rgba(169,77,108,.2);
-
 }
 
 .unlock-btn:active{
@@ -360,7 +312,6 @@ body{
     min-height:20px;
 
     font-size:13px;
-
 }
 
 
@@ -377,7 +328,6 @@ body{
     z-index:2;
 
     min-height:100vh;
-
 }
 
 
@@ -404,7 +354,6 @@ body{
     align-items:center;
 
     pointer-events:none;
-
 }
 
 .brand{
@@ -418,7 +367,6 @@ body{
     color:var(--deep);
 
     font-weight:600;
-
 }
 
 .counter{
@@ -433,7 +381,6 @@ body{
         rgba(255,255,255,.72);
 
     backdrop-filter:blur(10px);
-
 }
 
 
@@ -455,14 +402,13 @@ body{
 
     background:
         rgba(255,255,255,.45);
-
 }
 
 .progress{
 
     height:100%;
 
-    width:0%;
+    width:12.5%;
 
     background:
         linear-gradient(
@@ -473,7 +419,6 @@ body{
 
     transition:
         width .6s ease;
-
 }
 
 
@@ -488,14 +433,12 @@ body{
     display:none;
 
     align-items:center;
-
     justify-content:center;
 
     padding:
         100px
         20px
         50px;
-
 }
 
 .slide.active{
@@ -504,7 +447,6 @@ body{
 
     animation:
         slideIn .7s ease;
-
 }
 
 @keyframes slideIn{
@@ -550,7 +492,6 @@ body{
     box-shadow:
         0 25px 70px
         rgba(169,77,108,.10);
-
 }
 
 .eyebrow{
@@ -566,7 +507,6 @@ body{
     margin-bottom:14px;
 
     font-weight:600;
-
 }
 
 h2{
@@ -585,7 +525,6 @@ h2{
     margin-bottom:20px;
 
     font-weight:600;
-
 }
 
 h2 em{
@@ -593,7 +532,6 @@ h2 em{
     font-style:italic;
 
     color:var(--pink);
-
 }
 
 .sub{
@@ -605,7 +543,6 @@ h2 em{
     opacity:.75;
 
     margin-bottom:28px;
-
 }
 
 
@@ -618,7 +555,6 @@ h2 em{
     display:inline-flex;
 
     align-items:center;
-
     justify-content:center;
 
     padding:14px 22px;
@@ -651,7 +587,6 @@ h2 em{
     transition:
         transform .2s ease,
         box-shadow .2s ease;
-
 }
 
 .next-btn:hover{
@@ -661,12 +596,11 @@ h2 em{
     box-shadow:
         0 15px 30px
         rgba(169,77,108,.25);
-
 }
 
 
 /* =========================================================
-   GAME 1 — PLANT
+   GAME 1
 ========================================================= */
 
 .seed{
@@ -679,7 +613,6 @@ h2 em{
     border-radius:50%;
 
     display:flex;
-
     align-items:center;
     justify-content:center;
 
@@ -704,7 +637,6 @@ h2 em{
 
     transition:
         transform .25s ease;
-
 }
 
 .seed:hover{
@@ -717,7 +649,7 @@ h2 em{
 
 
 /* =========================================================
-   GAME 2 — BLOOM
+   GAME 2
 ========================================================= */
 
 .flowers{
@@ -732,7 +664,6 @@ h2 em{
     margin:28px auto;
 
     max-width:420px;
-
 }
 
 .flower-btn{
@@ -752,7 +683,6 @@ h2 em{
     transition:
         transform .25s ease,
         background .25s ease;
-
 }
 
 .flower-btn:hover{
@@ -765,7 +695,6 @@ h2 em{
 
     animation:
         bloom .5s ease;
-
 }
 
 @keyframes bloom{
@@ -804,43 +733,74 @@ h2 em{
     overflow:hidden;
 
     background:
-        linear-gradient(
-            135deg,
-            #fff8fb,
-            #ffe7ef
+        radial-gradient(
+            circle at 50% 40%,
+            #ffffff,
+            #ffeaf1
         );
 
     border:
-        1px solid
-        rgba(231,139,167,.2);
+        2px solid
+        rgba(231,139,167,.22);
 
+    box-shadow:
+        inset 0 0 35px
+        rgba(231,139,167,.08),
+
+        0 12px 35px
+        rgba(169,77,108,.10);
 }
 
 .game-heart{
 
     position:absolute;
 
+    width:60px;
+    height:60px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
     border:none;
 
-    background:none;
+    border-radius:50%;
 
-    font-size:32px;
+    background:#ffffff;
+
+    font-size:34px;
 
     cursor:pointer;
 
+    z-index:5;
+
+    box-shadow:
+        0 8px 20px
+        rgba(169,77,108,.18);
+
     animation:
         heartFloat 1.5s ease-in-out infinite;
+
+    transition:
+        transform .2s ease,
+        opacity .2s ease;
+}
+
+.game-heart:hover{
+
+    transform:scale(1.2);
 
 }
 
 @keyframes heartFloat{
 
     0%,100%{
-        transform:translateY(0);
+        margin-top:0;
     }
 
     50%{
-        transform:translateY(-10px);
+        margin-top:-10px;
     }
 
 }
@@ -881,7 +841,6 @@ h2 em{
 
         0 10px 30px
         rgba(169,77,108,.08);
-
 }
 
 .moving-heart{
@@ -909,7 +868,6 @@ h2 em{
         left .35s ease,
         top .35s ease,
         transform .2s ease;
-
 }
 
 .moving-heart:hover{
@@ -934,13 +892,13 @@ h2 em{
 
     animation:
         heartPop .7s ease forwards;
-
 }
 
 @keyframes heartPop{
 
     0%{
         opacity:1;
+
         transform:
             translateY(0)
             scale(.5);
@@ -948,6 +906,7 @@ h2 em{
 
     100%{
         opacity:0;
+
         transform:
             translateY(-60px)
             scale(1.3);
@@ -957,7 +916,7 @@ h2 em{
 
 
 /* =========================================================
-   MAGIC GARDEN
+   GARDEN
 ========================================================= */
 
 .garden{
@@ -986,7 +945,6 @@ h2 em{
         );
 
     overflow:hidden;
-
 }
 
 .garden-flower{
@@ -998,14 +956,12 @@ h2 em{
     transform:
         translateY(70px)
         scale(.3);
-
 }
 
 .garden-flower.grow{
 
     animation:
         gardenGrow .8s ease forwards;
-
 }
 
 @keyframes gardenGrow{
@@ -1017,7 +973,6 @@ h2 em{
         transform:
             translateY(0)
             scale(1);
-
     }
 
 }
@@ -1051,7 +1006,6 @@ h2 em{
     box-shadow:
         0 15px 40px
         rgba(169,77,108,.08);
-
 }
 
 .letter::before{
@@ -1067,7 +1021,6 @@ h2 em{
     color:var(--pink);
 
     font-size:28px;
-
 }
 
 .letter p{
@@ -1081,7 +1034,6 @@ h2 em{
     line-height:1.55;
 
     color:#704555;
-
 }
 
 .signature{
@@ -1097,7 +1049,6 @@ h2 em{
     font-size:26px;
 
     color:var(--deep);
-
 }
 
 
@@ -1113,7 +1064,6 @@ h2 em{
 
     animation:
         finalPulse 1.5s ease-in-out infinite;
-
 }
 
 @keyframes finalPulse{
@@ -1140,7 +1090,6 @@ h2 em{
     line-height:1.3;
 
     color:var(--deep);
-
 }
 
 
@@ -1151,22 +1100,15 @@ h2 em{
 @media(max-width:600px){
 
     .top{
-
-        padding:
-            15px;
-
+        padding:15px;
     }
 
     .brand{
-
         font-size:20px;
-
     }
 
     .counter{
-
         font-size:11px;
-
     }
 
     .slide{
@@ -1175,7 +1117,6 @@ h2 em{
             90px
             14px
             35px;
-
     }
 
     .card{
@@ -1185,7 +1126,6 @@ h2 em{
             20px;
 
         border-radius:26px;
-
     }
 
     h2{
@@ -1196,19 +1136,14 @@ h2 em{
                 13vw,
                 62px
             );
-
     }
 
     .sub{
-
         font-size:14px;
-
     }
 
     .flowers{
-
         gap:8px;
-
     }
 
     .flower-btn{
@@ -1216,19 +1151,22 @@ h2 em{
         border-radius:16px;
 
         font-size:27px;
-
     }
 
     .heart-game{
-
         height:270px;
-
     }
 
     .love-game{
-
         height:250px;
+    }
 
+    .game-heart{
+
+        width:58px;
+        height:58px;
+
+        font-size:31px;
     }
 
     .letter{
@@ -1236,13 +1174,10 @@ h2 em{
         padding:
             30px
             22px;
-
     }
 
     .letter p{
-
         font-size:20px;
-
     }
 
     .lock-card{
@@ -1250,27 +1185,23 @@ h2 em{
         padding:
             35px
             20px;
-
     }
 
     .lock-card h1{
-
         font-size:42px;
-
     }
 
 }
 
 
 /* =========================================================
-   SHAKE ANIMATION
+   SHAKE
 ========================================================= */
 
 .shake{
 
     animation:
         shake .35s ease;
-
 }
 
 @keyframes shake{
@@ -1297,40 +1228,40 @@ h2 em{
 
 
 <!-- =======================================================
-     BACKGROUND
+     FALLING PETALS
 ======================================================= -->
 
 <div class="petals">
 
-    <span class="petal"
-          style="left:8%;animation-duration:8s;">
-        🌸
-    </span>
+    <span
+        class="petal"
+        style="left:8%;animation-duration:8s;"
+    >🌸</span>
 
-    <span class="petal"
-          style="left:22%;animation-duration:11s;animation-delay:2s;">
-        ♡
-    </span>
+    <span
+        class="petal"
+        style="left:22%;animation-duration:11s;animation-delay:2s;"
+    >♡</span>
 
-    <span class="petal"
-          style="left:40%;animation-duration:9s;animation-delay:1s;">
-        🌸
-    </span>
+    <span
+        class="petal"
+        style="left:40%;animation-duration:9s;animation-delay:1s;"
+    >🌸</span>
 
-    <span class="petal"
-          style="left:62%;animation-duration:12s;animation-delay:3s;">
-        ♡
-    </span>
+    <span
+        class="petal"
+        style="left:62%;animation-duration:12s;animation-delay:3s;"
+    >♡</span>
 
-    <span class="petal"
-          style="left:80%;animation-duration:10s;animation-delay:4s;">
-        🌸
-    </span>
+    <span
+        class="petal"
+        style="left:80%;animation-duration:10s;animation-delay:4s;"
+    >🌸</span>
 
-    <span class="petal"
-          style="left:92%;animation-duration:13s;animation-delay:1s;">
-        ♡
-    </span>
+    <span
+        class="petal"
+        style="left:92%;animation-duration:13s;animation-delay:1s;"
+    >♡</span>
 
 </div>
 
@@ -1345,7 +1276,10 @@ h2 em{
      LOCK SCREEN
 ======================================================= -->
 
-<div class="lock-screen" id="lockScreen">
+<div
+    class="lock-screen"
+    id="lockScreen"
+>
 
     <div class="lock-card">
 
@@ -1506,46 +1440,34 @@ h2 em{
                 Each one is a tiny piece of happiness. 🌸
             </p>
 
-
             <div class="flowers">
 
                 <button
                     class="flower-btn"
                     onclick="bloom(this)"
-                >
-                    🌱
-                </button>
+                >🌱</button>
 
                 <button
                     class="flower-btn"
                     onclick="bloom(this)"
-                >
-                    🌱
-                </button>
+                >🌱</button>
 
                 <button
                     class="flower-btn"
                     onclick="bloom(this)"
-                >
-                    🌱
-                </button>
+                >🌱</button>
 
                 <button
                     class="flower-btn"
                     onclick="bloom(this)"
-                >
-                    🌱
-                </button>
+                >🌱</button>
 
                 <button
                     class="flower-btn"
                     onclick="bloom(this)"
-                >
-                    🌱
-                </button>
+                >🌱</button>
 
             </div>
-
 
             <p
                 id="bloomCount"
@@ -1554,14 +1476,13 @@ h2 em{
                 Flowers bloomed: 0 / 5
             </p>
 
-
             <button
                 class="next-btn"
                 id="bloomNext"
                 onclick="next()"
                 style="display:none;"
             >
-                The garden is blooming → 
+                The garden is blooming →
             </button>
 
         </div>
@@ -1570,7 +1491,7 @@ h2 em{
 
 
     <!-- ===================================================
-         SLIDE 03
+         SLIDE 03 — CATCH HEARTS
     ==================================================== -->
 
     <section class="slide">
@@ -1592,12 +1513,10 @@ h2 em{
                 Catch seven of them. 💕
             </p>
 
-
             <div
                 class="heart-game"
                 id="heartGame"
             ></div>
-
 
             <p
                 id="heartCount"
@@ -1605,7 +1524,6 @@ h2 em{
             >
                 Hearts caught: 0 / 7
             </p>
-
 
             <button
                 class="next-btn"
@@ -1622,7 +1540,7 @@ h2 em{
 
 
     <!-- ===================================================
-         SLIDE 04 — EASY GAME
+         SLIDE 04 — EASY CATCH MY LOVE
     ==================================================== -->
 
     <section class="slide">
@@ -1644,7 +1562,6 @@ h2 em{
                 Tap it 5 times to catch it.
             </p>
 
-
             <div
                 class="love-game"
                 id="loveGame"
@@ -1660,11 +1577,9 @@ h2 em{
 
             </div>
 
-
             <p id="loveScore">
                 Hearts caught: 0 / 5
             </p>
-
 
             <p
                 id="loveWin"
@@ -1677,7 +1592,6 @@ h2 em{
             >
                 You caught my heart! 💗
             </p>
-
 
             <button
                 class="next-btn"
@@ -1716,46 +1630,34 @@ h2 em{
                 Pick the flower your heart chooses. 🌷
             </p>
 
-
             <div class="flowers">
 
                 <button
                     class="flower-btn"
                     onclick="chooseFlower(this,'🌹')"
-                >
-                    🌹
-                </button>
+                >🌹</button>
 
                 <button
                     class="flower-btn"
                     onclick="chooseFlower(this,'🌷')"
-                >
-                    🌷
-                </button>
+                >🌷</button>
 
                 <button
                     class="flower-btn"
                     onclick="chooseFlower(this,'🌸')"
-                >
-                    🌸
-                </button>
+                >🌸</button>
 
                 <button
                     class="flower-btn"
                     onclick="chooseFlower(this,'🌻')"
-                >
-                    🌻
-                </button>
+                >🌻</button>
 
                 <button
                     class="flower-btn"
                     onclick="chooseFlower(this,'🌺')"
-                >
-                    🌺
-                </button>
+                >🌺</button>
 
             </div>
-
 
             <p
                 id="flowerChoice"
@@ -1767,14 +1669,13 @@ h2 em{
                 "
             ></p>
 
-
             <button
                 class="next-btn"
                 id="flowerNext"
                 onclick="next()"
                 style="display:none;"
             >
-                Come see the garden → 
+                Come see the garden →
             </button>
 
         </div>
@@ -1804,48 +1705,26 @@ h2 em{
                 all the little moments. 🌸
             </p>
 
-
             <div
                 class="garden"
                 id="garden"
             >
 
-                <span class="garden-flower">
-                    🌷
-                </span>
-
-                <span class="garden-flower">
-                    🌸
-                </span>
-
-                <span class="garden-flower">
-                    🌹
-                </span>
-
-                <span class="garden-flower">
-                    🌺
-                </span>
-
-                <span class="garden-flower">
-                    🌻
-                </span>
-
-                <span class="garden-flower">
-                    🌸
-                </span>
-
-                <span class="garden-flower">
-                    🌷
-                </span>
+                <span class="garden-flower">🌷</span>
+                <span class="garden-flower">🌸</span>
+                <span class="garden-flower">🌹</span>
+                <span class="garden-flower">🌺</span>
+                <span class="garden-flower">🌻</span>
+                <span class="garden-flower">🌸</span>
+                <span class="garden-flower">🌷</span>
 
             </div>
-
 
             <button
                 class="next-btn"
                 onclick="next()"
             >
-                There's something I want to say → 
+                There's something I want to say →
             </button>
 
         </div>
@@ -1869,7 +1748,6 @@ h2 em{
                 Just for
                 <em>you.</em>
             </h2>
-
 
             <div class="letter">
 
@@ -1910,21 +1788,17 @@ h2 em{
 
                 </p>
 
-
                 <div class="signature">
-
                     — Your boyfriend
-
                 </div>
 
             </div>
-
 
             <button
                 class="next-btn"
                 onclick="next()"
             >
-                One last thing → 
+                One last thing →
             </button>
 
         </div>
@@ -1952,7 +1826,6 @@ h2 em{
                 If I had to choose again...
             </h2>
 
-
             <p class="final-message">
 
                 I'd still choose you.
@@ -1969,7 +1842,6 @@ h2 em{
                 with you. ♡
 
             </p>
-
 
             <div
                 style="
@@ -2015,6 +1887,7 @@ function unlock(){
     const error =
         document.getElementById("error");
 
+
     if(input.value === correctCode){
 
         document
@@ -2028,13 +1901,6 @@ function unlock(){
         updateProgress();
 
         moveLoveHeart();
-
-        createHeartGame();
-
-        setTimeout(
-            growGarden,
-            500
-        );
 
     }else{
 
@@ -2056,7 +1922,9 @@ function unlock(){
 }
 
 
-/* Allow Enter key */
+/* =========================================================
+   ENTER KEY
+========================================================= */
 
 document
     .getElementById("codeInput")
@@ -2089,13 +1957,71 @@ function next(){
             currentSlide
         ].classList.remove("active");
 
+
         currentSlide++;
+
 
         slides[
             currentSlide
         ].classList.add("active");
 
+
         updateProgress();
+
+
+        /* Start heart game when entering Section 03 */
+
+        if(currentSlide === 2){
+
+            createHeartGame();
+
+        }
+
+
+        /* Start moving heart when entering Section 04 */
+
+        if(currentSlide === 3){
+
+            loveCaught = 0;
+
+            document
+                .getElementById("loveScore")
+                .textContent =
+                "Hearts caught: 0 / 5";
+
+            document
+                .getElementById("loveScore")
+                .style.display =
+                "block";
+
+            document
+                .getElementById("loveWin")
+                .style.display =
+                "none";
+
+            document
+                .getElementById("loveNext")
+                .style.display =
+                "none";
+
+            movingHeart.style.display =
+                "flex";
+
+            moveLoveHeart();
+
+        }
+
+
+        /* Grow garden when entering Section 06 */
+
+        if(currentSlide === 5){
+
+            setTimeout(
+                growGarden,
+                300
+            );
+
+        }
 
     }
 
@@ -2114,12 +2040,15 @@ function updateProgress(){
     const counter =
         document.getElementById("counter");
 
+
     const percent =
         ((currentSlide + 1) /
         slides.length) * 100;
 
+
     progress.style.width =
         percent + "%";
+
 
     counter.textContent =
         String(currentSlide + 1)
@@ -2143,13 +2072,16 @@ function plant(){
     const message =
         document.getElementById("plantMessage");
 
+
     seed.textContent = "🌸";
 
     seed.style.transform =
         "scale(1.15)";
 
+
     message.textContent =
         "Look... something beautiful is growing. 🌸";
+
 
     document
         .getElementById("plantNext")
@@ -2176,11 +2108,15 @@ function bloom(button){
 
     }
 
+
     button.classList.add("bloomed");
 
-    button.textContent = "🌸";
+    button.textContent =
+        "🌸";
+
 
     bloomedFlowers++;
+
 
     document
         .getElementById("bloomCount")
@@ -2203,12 +2139,10 @@ function bloom(button){
 
 
 /* =========================================================
-   GAME 3 — CATCH HEARTS
+   GAME 3 — CATCH 7 HEARTS
 ========================================================= */
 
 let heartsCaught = 0;
-
-let heartInterval;
 
 
 function createHeartGame(){
@@ -2216,18 +2150,36 @@ function createHeartGame(){
     const game =
         document.getElementById("heartGame");
 
-    if(!game) return;
+
+    if(!game){
+
+        return;
+
+    }
 
 
     game.innerHTML = "";
 
+
     heartsCaught = 0;
+
 
     document
         .getElementById("heartCount")
         .textContent =
         "Hearts caught: 0 / 7";
 
+
+    document
+        .getElementById("heartNext")
+        .style.display =
+        "none";
+
+
+    /*
+       Create 3 hearts immediately.
+       They will always be visible.
+    */
 
     for(let i = 0; i < 3; i++){
 
@@ -2243,67 +2195,150 @@ function spawnHeart(){
     const game =
         document.getElementById("heartGame");
 
-    if(!game) return;
 
-    if(heartsCaught >= 7) return;
+    if(!game){
+
+        return;
+
+    }
+
+
+    if(heartsCaught >= 7){
+
+        return;
+
+    }
 
 
     const heart =
         document.createElement("button");
 
+
     heart.className =
         "game-heart";
 
-    heart.textContent =
+
+    heart.innerHTML =
         Math.random() > .5
         ? "💗"
         : "💕";
 
 
+    /*
+       Keep the heart safely inside
+       the game area.
+    */
+
+    const heartSize = 60;
+
+
     const maxX =
-        game.clientWidth - 45;
+        Math.max(
+            10,
+            game.clientWidth -
+            heartSize -
+            10
+        );
+
 
     const maxY =
-        game.clientHeight - 45;
+        Math.max(
+            10,
+            game.clientHeight -
+            heartSize -
+            10
+        );
+
+
+    const x =
+        10 +
+        Math.random() *
+        (maxX - 10);
+
+
+    const y =
+        10 +
+        Math.random() *
+        (maxY - 10);
 
 
     heart.style.left =
-        Math.random() * maxX + "px";
+        x + "px";
+
 
     heart.style.top =
-        Math.random() * maxY + "px";
+        y + "px";
 
 
-    heart.onclick = function(){
+    heart.onclick =
+        function(){
 
-        heartsCaught++;
+            if(heartsCaught >= 7){
 
+                return;
 
-        document
-            .getElementById("heartCount")
-            .textContent =
-            "Hearts caught: "
-            + heartsCaught
-            + " / 7";
+            }
 
 
-        heart.remove();
+            heartsCaught++;
 
-
-        if(heartsCaught >= 7){
 
             document
-                .getElementById("heartNext")
-                .style.display =
-                "inline-flex";
+                .getElementById("heartCount")
+                .textContent =
+                "Hearts caught: "
+                + heartsCaught
+                + " / 7";
 
-        }else{
 
-            spawnHeart();
+            /*
+               Little pop effect
+            */
 
-        }
+            heart.style.transform =
+                "scale(1.5)";
 
-    };
+            heart.style.opacity =
+                "0";
+
+
+            setTimeout(
+                () => {
+
+                    heart.remove();
+
+                },
+                180
+            );
+
+
+            if(heartsCaught >= 7){
+
+                document
+                    .getElementById("heartNext")
+                    .style.display =
+                    "inline-flex";
+
+                return;
+
+            }
+
+
+            /*
+               Add another heart
+               after catching one.
+            */
+
+            setTimeout(
+                () => {
+
+                    spawnHeart();
+
+                },
+                220
+            );
+
+        };
 
 
     game.appendChild(heart);
@@ -2328,7 +2363,10 @@ const loveGame =
 
 function moveLoveHeart(){
 
-    if(!movingHeart || !loveGame){
+    if(
+        !movingHeart ||
+        !loveGame
+    ){
 
         return;
 
@@ -2338,28 +2376,47 @@ function moveLoveHeart(){
     const gameWidth =
         loveGame.clientWidth;
 
+
     const gameHeight =
         loveGame.clientHeight;
+
 
     const heartSize = 65;
 
 
     const maxX =
-        gameWidth - heartSize;
+        Math.max(
+            5,
+            gameWidth -
+            heartSize -
+            5
+        );
+
 
     const maxY =
-        gameHeight - heartSize;
+        Math.max(
+            5,
+            gameHeight -
+            heartSize -
+            5
+        );
 
 
     const x =
-        Math.random() * maxX;
+        5 +
+        Math.random() *
+        (maxX - 5);
+
 
     const y =
-        Math.random() * maxY;
+        5 +
+        Math.random() *
+        (maxY - 5);
 
 
     movingHeart.style.left =
         x + "px";
+
 
     movingHeart.style.top =
         y + "px";
@@ -2387,15 +2444,19 @@ function catchLove(){
         + " / 5";
 
 
-    /* Little heart explosion */
+    /*
+       Little heart explosion
+    */
 
     for(let i = 0; i < 5; i++){
 
         const heart =
             document.createElement("span");
 
+
         heart.className =
             "heart-pop";
+
 
         heart.textContent =
             [
@@ -2424,14 +2485,19 @@ function catchLove(){
             + "px";
 
 
-        loveGame.appendChild(heart);
+        loveGame.appendChild(
+            heart
+        );
 
 
-        setTimeout(() => {
+        setTimeout(
+            () => {
 
-            heart.remove();
+                heart.remove();
 
-        },700);
+            },
+            700
+        );
 
     }
 
@@ -2486,13 +2552,17 @@ function chooseFlower(
 
 
     document
-        .querySelectorAll(".flower-btn")
-        .forEach(btn => {
+        .querySelectorAll(
+            ".flower-btn"
+        )
+        .forEach(
+            btn => {
 
-            btn.style.transform =
-                "";
+                btn.style.transform =
+                    "";
 
-        });
+            }
+        );
 
 
     button.style.transform =
@@ -2501,12 +2571,16 @@ function chooseFlower(
 
     choice.textContent =
         flower
-        + " You chose a beautiful one... "
-        + "just like you. ♡";
+        +
+        " You chose a beautiful one..."
+        +
+        " just like you. ♡";
 
 
     document
-        .getElementById("flowerNext")
+        .getElementById(
+            "flowerNext"
+        )
         .style.display =
         "inline-flex";
 
@@ -2546,13 +2620,12 @@ function growGarden(){
 
 
 /* =========================================================
-   RESET / INITIALIZATION
+   INITIAL
 ========================================================= */
 
 updateProgress();
 
 </script>
-
 
 </body>
 </html>
